@@ -68,3 +68,4 @@ target_include_directories(${PACKAGE_NAME} PRIVATE
     )
 
 target_link_libraries(${PACKAGE_NAME} fbjni::fbjni flippercpp)
+target_link_libraries(${PACKAGE_NAME} PRIVATE "-Wl,-z,max-page-size=16384")
